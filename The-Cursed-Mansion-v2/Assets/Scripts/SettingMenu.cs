@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-
+using System.Linq;
 public class SettingMenu : MonoBehaviour
 {
     private Slider sliderVolume;
@@ -18,8 +18,7 @@ public class SettingMenu : MonoBehaviour
 
     void Start()
     {
-        resolutions = Screen.resolutions;
-        
+        resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
         sliderVolume = GameObject.Find("Slider").GetComponent<Slider>();
         sliderVolume.onValueChanged.AddListener(SetVolume);
 
