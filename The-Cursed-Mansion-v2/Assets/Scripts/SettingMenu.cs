@@ -35,7 +35,7 @@ public class SettingMenu : MonoBehaviour
         {
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
             {
                 currentResolutionIndex = i;
             }
@@ -64,5 +64,10 @@ public class SettingMenu : MonoBehaviour
     {
         Debug.Log("Mode pleine écran : " + isFullScreen);
         Screen.fullScreen = isFullScreen;
+    }
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width,resolution.height,Screen.fullScreen);
     }
 }
