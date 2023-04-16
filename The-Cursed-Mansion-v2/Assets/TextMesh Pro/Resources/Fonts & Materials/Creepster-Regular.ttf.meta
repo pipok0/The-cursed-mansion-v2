@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 54708226185660b4086a61e4d74f1285
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Creepster
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 44ef9799a0f0efb448b136267434a04b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
