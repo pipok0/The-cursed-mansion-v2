@@ -1,26 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject pauseMenu;
-    private Button btnRejouer;
+
     private GameObject player;
+    private GameObject panelSettings;
     private Vector3 startPosition;
-
-    void Start()
-    {
-        btnRejouer = GameObject.Find("RetryButton").GetComponent<Button>();
-        
-        player = GameObject.FindGameObjectWithTag("Player");
-        startPosition = player.transform.position;
-    }
-
+   
     void Update()
     {
+        
+       
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("Touche Échap détectée !");
@@ -30,6 +24,7 @@ public class Pause : MonoBehaviour
             }
             else
             {
+                
                 Paused();
             }
         }
@@ -44,29 +39,9 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0;
         //changer le statut du jeu
         gameIsPaused = true;
-
-        // Ajouter la méthode RestartGame à l'événement onClick du bouton RetryButton
-        btnRejouer.onClick.AddListener(RestartGame);
     }
 
-    public void RestartGame()
-    {
-       
-        // changer le statut du jeu
-        gameIsPaused = false;
-
-        // réinitialiser la position du joueur
-        player.transform.position = startPosition;
-
-        // réactiver le mouvement du joueur
-        //PlayerMovement.instance.enabled = true;
-
-        // relancer le temps
-        Time.timeScale = 1;
-
-        // désactiver le menu pause
-        pauseMenu.SetActive(false);
-    }
+    
 
     public void Resume()
     {
@@ -79,4 +54,22 @@ public class Pause : MonoBehaviour
         //changer le statut du jeu
         gameIsPaused = false;
     }
+
+
+    public void RestartGame()
+    {
+       SceneManager.LoadScene("SampleScene");
+    }
+    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void Menu()
+    {
+       panelSettings.SetActive(true);
+    }
+
 }
+
