@@ -32523,6 +32523,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 268227775}
   - {fileID: 1798730613}
+  damageOnCollision: 20
 --- !u!61 &495224724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34870,6 +34871,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  invincibilityTime: 3
+  invicibilityFlashDelay: 0.15
+  isInvicible: 0
+  graphics: {fileID: 2060311782}
   healthBar: {fileID: 98045643}
 --- !u!1 &2073100481
 GameObject:
