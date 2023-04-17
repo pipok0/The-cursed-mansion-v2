@@ -34476,7 +34476,7 @@ GameObject:
   - component: {fileID: 2073100485}
   - component: {fileID: 2073100486}
   m_Layer: 0
-  m_Name: coin-spritesheet_0
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
