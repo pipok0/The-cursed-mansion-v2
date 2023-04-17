@@ -8,7 +8,7 @@ public class Pause : MonoBehaviour
     public GameObject pauseMenu;
 
     private GameObject player;
-    private GameObject panelSettings;
+    //private GameObject panelSettings;
     private Vector3 startPosition;
    
     void Update()
@@ -66,9 +66,9 @@ public class Pause : MonoBehaviour
         Application.Quit();
     }
 
-    public void Menu()
+    public void Menu(GameObject menu)
     {
-       panelSettings.SetActive(true);
+       menu.SetActive(true);
     }
 
 }
