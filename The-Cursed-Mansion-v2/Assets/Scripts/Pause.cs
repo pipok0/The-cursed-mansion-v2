@@ -51,9 +51,7 @@ public class Pause : MonoBehaviour
 
     public void RestartGame()
     {
-        // Supprimer la méthode RestartGame de l'événement onClick du bouton RetryButton
-        btnRejouer.onClick.RemoveAllListeners();
-
+       
         // changer le statut du jeu
         gameIsPaused = false;
 
