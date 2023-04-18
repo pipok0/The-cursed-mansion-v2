@@ -69,14 +69,9 @@ public class Pause : MonoBehaviour
 
     public void Menu(GameObject menu)
     {
-        if (menu.activeSelf)
-        {
-            menu.SetActive(false);
-        }
-        else
-        {
-            menu.SetActive(true);
-        }
+        Paused();
+        menu.SetActive(true);
+        
     }
 
 }

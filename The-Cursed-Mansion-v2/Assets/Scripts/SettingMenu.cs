@@ -12,7 +12,7 @@ public class SettingMenu : MonoBehaviour
     private Toggle pleineEcran;
 
     private Button btnRetour;
-
+    GameObject panel;
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
 
@@ -24,8 +24,8 @@ public class SettingMenu : MonoBehaviour
 
         pleineEcran = GameObject.Find("Toggle").GetComponent<Toggle>();
         pleineEcran.onValueChanged.AddListener(setFullScreen);
+      
 
-        
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
@@ -39,6 +39,8 @@ public class SettingMenu : MonoBehaviour
                 currentResolutionIndex = i;
             }
         }
+       
+       
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
@@ -47,10 +49,17 @@ public class SettingMenu : MonoBehaviour
         btnRetour = GameObject.Find("Retour").GetComponent<Button>();
         btnRetour.onClick.AddListener(Retour);
     }
-
+    void Update()
+    {
+        panel = GameObject.Find("PanelSettings");
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            panel.SetActive(false);
+        }
+    }
     void Retour()
     {
-        GameObject panel = GameObject.Find("PanelSettings");
+        panel = GameObject.Find("PanelSettings");
         panel.SetActive(false);
     }
     void SetVolume(float volume)
