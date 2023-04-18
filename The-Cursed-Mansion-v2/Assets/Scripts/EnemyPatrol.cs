@@ -9,6 +9,7 @@ public class EnemyPatrol : MonoBehaviour
 
     public int damageOnCollision;
 
+    public SpriteRenderer graphics;
     private Transform target; // Point courant ciblé
     private int destPoint = 0; // Indice du point courant ciblé
     void Start()
@@ -26,6 +27,7 @@ public class EnemyPatrol : MonoBehaviour
         {
             destPoint = (destPoint + 1) % waypoints.Length; // Boucle
             target = waypoints[destPoint]; // Choix du nouveau point ciblé
+            graphics.flipX = !graphics.flipX;
         }
     }
 
