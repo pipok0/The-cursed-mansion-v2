@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     public int coinsCount;
+    public Text coinsCountText;
 
     public static Inventory instance;
 
@@ -12,7 +14,7 @@ public class Inventory : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Il y a plus d'une instance de Inventory dans la scène");
+            Debug.LogWarning("Il y a plus d'une instance de Inventory dans la scene");
             return;
         }
 
@@ -22,5 +24,6 @@ public class Inventory : MonoBehaviour
     public void AddCoins(int count)
     {
         coinsCount += count;
+        coinsCountText.text = coinsCount.ToString();
     }
 }
