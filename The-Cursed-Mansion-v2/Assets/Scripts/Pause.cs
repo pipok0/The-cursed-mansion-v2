@@ -58,9 +58,10 @@ public class Pause : MonoBehaviour
 
     public void RestartGame()
     {
-       SceneManager.LoadScene("SampleScene");
+        Resume();
+        SceneManager.LoadScene("SampleScene");
     }
-    
+
     public void QuitGame()
     {
         Application.Quit();
@@ -68,7 +69,14 @@ public class Pause : MonoBehaviour
 
     public void Menu(GameObject menu)
     {
-       menu.SetActive(true);
+        if (menu.activeSelf)
+        {
+            menu.SetActive(false);
+        }
+        else
+        {
+            menu.SetActive(true);
+        }
     }
 
 }
