@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -11.3, y: 3.028}
+  m_AnchoredPosition: {x: -26.1, y: 3.028}
   m_SizeDelta: {x: 26.4894, y: 19.258}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21132445
@@ -430,10 +430,10 @@ RectTransform:
   m_Father: {fileID: 1385563925}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -390.27084, y: 147.44302}
-  m_SizeDelta: {x: 146.2583, y: 25.3139}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 137, y: -65.06}
+  m_SizeDelta: {x: 146.2583, y: 25.313904}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98045642
 MonoBehaviour:
@@ -13934,6 +13934,8 @@ GameObject:
   - component: {fileID: 465850038}
   - component: {fileID: 465850037}
   - component: {fileID: 465850039}
+  - component: {fileID: 465850041}
+  - component: {fileID: 465850040}
   m_Layer: 0
   m_Name: fondation
   m_TagString: Untagged
@@ -32486,7 +32488,50 @@ TilemapCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
+  m_ExtrusionFactor: 0.00001
+--- !u!66 &465850040
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465850035}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+--- !u!50 &465850041
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465850035}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &495224722
 GameObject:
   m_ObjectHideFlags: 0
@@ -32908,7 +32953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.052001953, y: -0.028201103}
+  m_AnchoredPosition: {x: 0.550354, y: 0}
   m_SizeDelta: {x: -1.1007, y: -0.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &609596447
@@ -33632,6 +33677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinsCount: 0
+  coinsCountText: {fileID: 1748039655}
 --- !u!4 &1020571561
 Transform:
   m_ObjectHideFlags: 0
@@ -33889,7 +33935,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.5}
   m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183899729
@@ -34166,8 +34212,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -344.409, y: -146.59848}
-  m_SizeDelta: {x: 598.2, y: 122.1}
+  m_AnchoredPosition: {x: -314.35, y: -64.55849}
+  m_SizeDelta: {x: 628.7, y: 129.1169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1613188432
 GameObject:
@@ -34303,7 +34349,7 @@ GameObject:
   - component: {fileID: 1748039656}
   - component: {fileID: 1748039655}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: CoinsCountText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34326,8 +34372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37.112, y: 17.5}
-  m_SizeDelta: {x: 234.2239, y: 65}
+  m_AnchoredPosition: {x: -42.001, y: 0.00038528}
+  m_SizeDelta: {x: 544.7, y: 129.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748039655
 MonoBehaviour:
@@ -34342,7 +34388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -34350,19 +34396,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 76
+    m_Font: {fileID: 12800000, guid: 44ef9799a0f0efb448b136267434a04b, type: 3}
+    m_FontSize: 63
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 76
+    m_MinSize: 2
+    m_MaxSize: 87
     m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Test
+  m_Text: '0
 
 '
 --- !u!222 &1748039656
@@ -34894,7 +34940,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ab603b6ae03b7f141a7a59639f3a7d87, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -35189,7 +35235,7 @@ GameObject:
   - component: {fileID: 2125956674}
   - component: {fileID: 2125956673}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CoinsCountImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35212,8 +35258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -60, y: -0.00001049}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -54, y: 0.00000095367}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2125956673
 MonoBehaviour:
