@@ -1347,8 +1347,8 @@ RectTransform:
   m_Father: {fileID: 1462989262}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1724,7 +1724,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -50841,7 +50841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059186329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalPosition: {x: -0.534, y: 0.014, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -91391,12 +91391,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1223838130}
   m_Layer: 0
-  m_Name: GroundCheckLeft
+  m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1223838130
 Transform:
   m_ObjectHideFlags: 0
@@ -91405,7 +91405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223838129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.208, y: -1.037, z: 0}
+  m_LocalPosition: {x: 0.002, y: -0.763, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92360,37 +92360,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737024610}
   m_CullTransparentMesh: 1
---- !u!1 &1759441022
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1759441023}
-  m_Layer: 0
-  m_Name: GroundCheckRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1759441023
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759441022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.265, y: -1.037, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2060311783}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790754932
 GameObject:
   m_ObjectHideFlags: 0
@@ -93270,7 +93239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2056689323
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93296,7 +93265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 21.459503, y: 7.664}
+  m_AnchoredPosition: {x: 21.459473, y: 7.6640015}
   m_SizeDelta: {x: -291.2371, y: -79.7069}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2056689324
@@ -93367,7 +93336,7 @@ GameObject:
   - component: {fileID: 2060311785}
   - component: {fileID: 2060311786}
   - component: {fileID: 2060311787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -93481,12 +93450,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060311778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5632763, y: -2, z: 0}
+  m_LocalPosition: {x: -2.558, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1223838130}
-  - {fileID: 1759441023}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -93503,12 +93471,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 250
+  climbSpeed: 0
   jumpForce: 300
-  groundCheckLeft: {fileID: 1223838130}
-  groundCheckRight: {fileID: 1759441023}
+  isClimbing: 0
+  groundCheck: {fileID: 1223838130}
+  groundCheckRadius: 0.3
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 1
   rb: {fileID: 2060311780}
   animator: {fileID: 2060311786}
   spriteRenderer: {fileID: 2060311782}
+  playerCollider: {fileID: 2060311779}
 --- !u!58 &2060311785
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93561,8 +93535,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   invincibilityTime: 3
-  invicibilityFlashDelay: 0.15
-  isInvicible: 0
+  invincibilityFlashDelay: 0.2
+  isInvincible: 0
   graphics: {fileID: 2060311782}
   healthBar: {fileID: 1908155670}
 --- !u!1 &2073100481

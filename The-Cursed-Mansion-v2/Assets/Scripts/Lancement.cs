@@ -9,13 +9,12 @@ public class Lancement : MonoBehaviour
     private Button btnJouer;
     private Button btnQuitter;
     private Button btnOption;
+    private Button btnCredit;
     private GameObject panelSettings;
     
 
     void Start()
     {
-        
-
         panelSettings = GameObject.Find("PanelSettings");
         panelSettings.SetActive(false);
 
@@ -28,6 +27,8 @@ public class Lancement : MonoBehaviour
         btnOption = GameObject.Find("OptionButton").GetComponent<Button>();
         btnOption.onClick.AddListener(Option);
 
+        btnCredit = GameObject.Find("CreditButton").GetComponent<Button>();
+        btnCredit.onClick.AddListener(Credit);
     }
 
     void StartGame()
@@ -45,9 +46,9 @@ public class Lancement : MonoBehaviour
         Debug.Log("Vous avez cliqué sur " + btnOption.name);
         panelSettings.SetActive(true);
     }
-    void onDisable()
+    void Credit()
     {
-        Debug.Log("Remove Listener");
-        btnJouer.onClick.RemoveListener(StartGame);
+        Debug.Log("Vous avez cliqué sur " + btnCredit.name);
+        SceneManager.LoadScene("Credit");
     }
 }
