@@ -33703,7 +33703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045146501}
   - component: {fileID: 1045146503}
-  - component: {fileID: 1045146502}
+  - component: {fileID: 1045146504}
   m_Layer: 0
   m_Name: WeakSpot
   m_TagString: Untagged
@@ -33726,19 +33726,6 @@ Transform:
   m_Father: {fileID: 495224726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1045146502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045146500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35f919b532f21dd429ff91724fbaf6f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 1826510048}
 --- !u!61 &1045146503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33765,6 +33752,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7002392, y: 0.17564845}
   m_EdgeRadius: 0
+--- !u!114 &1045146504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045146500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f919b532f21dd429ff91724fbaf6f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 1826510048}
+  inventory: {fileID: 1020571560}
 --- !u!1 &1181793363
 GameObject:
   m_ObjectHideFlags: 0
