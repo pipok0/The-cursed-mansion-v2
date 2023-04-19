@@ -8,6 +8,9 @@ public class Enemy : MonoBehaviour
     int currentHealth;
     public GameObject bloodEffect;
     public Animator animator;
+    public bool isDead = false;
+    public static Enemy instance;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,21 +20,24 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Instantiate(bloodEffect, transform.position, Quaternion.identity) ;
+        Instantiate(bloodEffect, transform.position, Quaternion.identity);
         currentHealth -= damage;
 
         // Play hurt animation
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
-            animator.SetTrigger("GhostDeath");
         }
     }
 
     void Die()
     {
-        Destroy(gameObject);
+        isDead = true;
+        GetComponent<EnemyPatrol>().enabled = false;
+        Inventory.instance.AddCoins(2);
+        animator.SetTrigger("Die");
+        GetComponent<BoxCollider2D>().enabled = false; // désactiver le BoxCollider2D
     }
 
 }
