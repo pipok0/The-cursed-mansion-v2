@@ -2054,6 +2054,7 @@ GameObject:
   - component: {fileID: 495224724}
   - component: {fileID: 495224723}
   - component: {fileID: 495224727}
+  - component: {fileID: 495224728}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -2194,6 +2195,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &495224728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495224722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1258e8f2597a544af6c0c0e8da3482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  bloodEffect: {fileID: 0}
+  animator: {fileID: 495224727}
 --- !u!1 &508769284
 GameObject:
   m_ObjectHideFlags: 0
@@ -93887,6 +93903,7 @@ GameObject:
   - component: {fileID: 2060311785}
   - component: {fileID: 2060311786}
   - component: {fileID: 2060311787}
+  - component: {fileID: 2060311788}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -94090,6 +94107,27 @@ MonoBehaviour:
   isInvincible: 0
   graphics: {fileID: 2060311782}
   healthBar: {fileID: 1908155670}
+--- !u!114 &2060311788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060311778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaa030e7acc9c644a6b74d237513caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2060311786}
+  attackPoint: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 0.5
+  attackDamage: 40
+  attackRate: 1
+  isAttacking: 0
 --- !u!1 &2073100481
 GameObject:
   m_ObjectHideFlags: 0
