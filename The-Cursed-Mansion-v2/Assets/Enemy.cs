@@ -24,14 +24,13 @@ public class Enemy : MonoBehaviour
 
         if(currentHealth <= 0)
         {
-            Die();
-            animator.SetTrigger("GhostDeath");
+            Die();     
         }
     }
 
     void Die()
     {
-        Destroy(gameObject);
+       EnemyPatrol.instance.animator.SetTrigger("DeathGhost");
     }
 
 }

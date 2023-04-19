@@ -16516,6 +16516,7 @@ MonoBehaviour:
   - {fileID: 1798730613}
   damageOnCollision: 20
   graphics: {fileID: 495224725}
+  animator: {fileID: 495224727}
 --- !u!61 &495224724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16611,7 +16612,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &495224727
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16628,7 +16629,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &495224728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16643,6 +16645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 80
   bloodEffect: {fileID: 1497586897}
+  animator: {fileID: 495224727}
 --- !u!1 &508769284
 GameObject:
   m_ObjectHideFlags: 0
@@ -65271,6 +65274,7 @@ MonoBehaviour:
   - {fileID: 1542786279}
   damageOnCollision: 50
   graphics: {fileID: 893748531}
+  animator: {fileID: 0}
 --- !u!61 &893748530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65366,7 +65370,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &893748533
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -65383,7 +65387,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &908665383
 GameObject:
   m_ObjectHideFlags: 0
@@ -65466,7 +65471,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &979713761
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -65483,7 +65488,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &979713762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65502,6 +65508,7 @@ MonoBehaviour:
   - {fileID: 1096476812}
   damageOnCollision: 50
   graphics: {fileID: 979713763}
+  animator: {fileID: 0}
 --- !u!212 &979713763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106529,6 +106536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -113097,9 +113105,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 80
   bloodEffect: {fileID: 1497586897}
+  animator: {fileID: 1947699624}
 --- !u!95 &1947699624
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113116,7 +113125,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1947699625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113135,6 +113145,7 @@ MonoBehaviour:
   - {fileID: 0}
   damageOnCollision: 20
   graphics: {fileID: 1947699627}
+  animator: {fileID: 0}
 --- !u!61 &1947699626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -113490,7 +113501,7 @@ CircleCollider2D:
   m_Radius: 0.3957649
 --- !u!95 &2060311786
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113507,7 +113518,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2060311787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113665,7 +113677,7 @@ CircleCollider2D:
   m_Radius: 0.1
 --- !u!95 &2073100486
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113682,7 +113694,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2078213988
 GameObject:
   m_ObjectHideFlags: 0

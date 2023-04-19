@@ -10,8 +10,23 @@ public class EnemyPatrol : MonoBehaviour
     public int damageOnCollision;
 
     public SpriteRenderer graphics;
-    private Transform target; // Point courant ciblé
-    private int destPoint = 0; // Indice du point courant ciblé
+    private Transform target; // Point courant ciblï¿½
+    private int destPoint = 0; // Indice du point courant ciblï¿½
+    public static EnemyPatrol instance;
+    public Animator animator;
+
+     private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plus d'une instance de EnemyPatrol dans la scÃ¨ne");
+            return;
+        }
+
+        instance = this;
+    }
+
+
     void Start()
     {
         target = waypoints[0];
@@ -26,7 +41,7 @@ public class EnemyPatrol : MonoBehaviour
         if (Vector3.Distance(transform.position, target.position) < 0.3f)
         {
             destPoint = (destPoint + 1) % waypoints.Length; // Boucle
-            target = waypoints[destPoint]; // Choix du nouveau point ciblé
+            target = waypoints[destPoint]; // Choix du nouveau point ciblï¿½
             graphics.flipX = !graphics.flipX;
         }
     }
