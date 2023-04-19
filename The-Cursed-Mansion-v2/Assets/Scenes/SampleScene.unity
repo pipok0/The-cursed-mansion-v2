@@ -6899,7 +6899,7 @@ GameObject:
   - component: {fileID: 495224723}
   - component: {fileID: 495224727}
   - component: {fileID: 495224728}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56309,7 +56309,7 @@ GameObject:
   - component: {fileID: 1056458035}
   - component: {fileID: 1056458034}
   - component: {fileID: 1056458033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99267,7 +99267,7 @@ MonoBehaviour:
   attackPoint: {fileID: 617119201}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   attackRange: 0.5
   attackDamage: 40
   attackRate: 1
