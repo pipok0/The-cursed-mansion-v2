@@ -14,6 +14,8 @@ public class EnemyPatrol : MonoBehaviour
     private int destPoint = 0; // Indice du point courant cibl�
     public static EnemyPatrol instance;
     public Animator animator;
+    public Enemy enemy;
+
 
      private void Awake()
     {
