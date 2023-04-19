@@ -21,11 +21,13 @@ public class Pause : MonoBehaviour
             if (gameIsPaused)
             {
                 Resume();
+                Debug.Log("Resume détectée !");
             }
             else
             {
                 
                 Paused();
+                Debug.Log("Pause détectée !");
             }
         }
     }
@@ -59,7 +61,7 @@ public class Pause : MonoBehaviour
     public void RestartGame()
     {
         Resume();
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level2");
     }
 
     public void QuitGame()
