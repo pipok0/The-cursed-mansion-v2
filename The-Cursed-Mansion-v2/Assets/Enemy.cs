@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public int maxHealth = 100;
     int currentHealth;
+    public GameObject bloodEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Instantiate(bloodEffect, transform.position, Quaternion.identity) ;
         currentHealth -= damage;
 
         // Play hurt animation

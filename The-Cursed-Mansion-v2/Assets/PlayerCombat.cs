@@ -13,6 +13,7 @@ public class PlayerCombat : MonoBehaviour
     public int attackDamage = 40;
     public float attackRate = 1f;
     float nextAttackTime = 0f;
+    public bool isAttacking = false;
 
     // Update is called once per frame
     void Update()
@@ -30,14 +31,16 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
+
         // Animation d'attaque
         animator.SetTrigger("Attack");
 
         // Détecte les ennemis à notre portée
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
+
         // Leur infliger des dégâts
-        foreach(Collider2D enemy in hitEnemies)
+        foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
