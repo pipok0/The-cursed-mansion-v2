@@ -23,13 +23,13 @@ public class PlayerCombat : MonoBehaviour
         {  
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Attack();
+                StartCoroutine(Attack());
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
     }
 
-    void Attack()
+    IEnumerator Attack()
     {
 
         // Animation d'attaque
@@ -38,6 +38,8 @@ public class PlayerCombat : MonoBehaviour
         // Détecte les ennemis à notre portée
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
+
+        yield return new WaitForSeconds(0.3f);
 
         // Leur infliger des dégâts
         foreach (Collider2D enemy in hitEnemies)
