@@ -61,7 +61,7 @@ public class Pause : MonoBehaviour
     public void RestartGame()
     {
         Resume();
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void QuitGame()
