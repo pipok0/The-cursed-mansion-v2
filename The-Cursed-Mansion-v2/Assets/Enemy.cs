@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
 {
     public int maxHealth = 100;
     int currentHealth;
-    public GameObject bloodEffect;
     public Animator animator;
     public bool isDead = false;
     public static Enemy instance;
@@ -20,7 +19,6 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Instantiate(bloodEffect, transform.position, Quaternion.identity) ;
         currentHealth -= damage;
 
         // Play hurt animation

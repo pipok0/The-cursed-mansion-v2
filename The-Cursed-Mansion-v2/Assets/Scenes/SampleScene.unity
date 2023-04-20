@@ -16645,7 +16645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 80
-  bloodEffect: {fileID: 1497586897}
   animator: {fileID: 495224727}
   isDead: 0
 --- !u!1 &508769284
@@ -113222,7 +113221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 80
-  bloodEffect: {fileID: 1497586897}
   animator: {fileID: 1947699624}
   isDead: 0
 --- !u!95 &1947699624
@@ -113253,7 +113251,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947699621}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f1d468f80db44b4ead18c89857f5e9a, type: 3}
   m_Name: 
