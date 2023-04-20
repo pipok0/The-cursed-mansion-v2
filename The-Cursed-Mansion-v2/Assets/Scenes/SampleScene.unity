@@ -56573,6 +56573,7 @@ GameObject:
   - component: {fileID: 908665384}
   - component: {fileID: 908665385}
   - component: {fileID: 908665386}
+  - component: {fileID: 908665387}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -56620,7 +56621,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23e39e127c38ec408d2864d70c40278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObject: {fileID: 2060311778}
   gameOverUI: {fileID: 2027282849}
+--- !u!114 &908665387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908665383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9683b6a9a77ee42b095b6b41c81a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 2060311778}
+  - {fileID: 211287602}
+  - {fileID: 1385563921}
+  - {fileID: 908665383}
+  - {fileID: 519420028}
 --- !u!1 &964722140
 GameObject:
   m_ObjectHideFlags: 0
@@ -99227,7 +99247,7 @@ GameObject:
   - component: {fileID: 1585503728}
   - component: {fileID: 1585503727}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: TransitionLvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101259,6 +101279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317b8ab3b79eea44a8b0f0b326703916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObject: {fileID: 2060311778}
   maxHealth: 100
   currentHealth: 0
   invincibilityTime: 3

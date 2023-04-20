@@ -62,6 +62,8 @@ public class Pause : MonoBehaviour
     {
         Resume();
         SceneManager.LoadScene("SampleScene");
+        Inventory.instance.RemoveCoins();
+        PlayerHealth.instance.Respawn();
     }
 
     public void QuitGame()

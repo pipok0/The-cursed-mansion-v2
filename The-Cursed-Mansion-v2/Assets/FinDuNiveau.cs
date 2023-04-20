@@ -22,6 +22,8 @@ public class FinDuNiveau : MonoBehaviour
     {
         Debug.Log("Vous avez cliqué sur " + btnRecommencer.name);
         SceneManager.LoadScene("Assets/Scenes/SampleScene.unity");
+        Inventory.instance.RemoveCoins();
+        PlayerHealth.instance.Respawn();
     }
     void MainMenu()
     {
