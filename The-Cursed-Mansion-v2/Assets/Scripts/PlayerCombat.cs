@@ -8,6 +8,8 @@ public class PlayerCombat : MonoBehaviour
 
     public Animator animator;
     public Transform attackPoint;
+    public Transform attackPointRight;
+    public Transform attackPointLeft;
     public LayerMask enemyLayers;
     public float attackRange = 0.5f;
     public int attackDamage = 40;
@@ -55,4 +57,22 @@ public class PlayerCombat : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
+
+    public void Flip(float _velocity)
+    {
+        if (_velocity > 0.1f)
+        {
+            attackPointRight.gameObject.SetActive(true);
+            attackPointLeft.gameObject.SetActive(false);
+            attackPoint = attackPointRight;
+
+        }
+        else if (_velocity < -0.1f)
+        {
+            attackPointRight.gameObject.SetActive(false);
+            attackPointLeft.gameObject.SetActive(true);
+            attackPoint = attackPointLeft;
+        }
+    }
+
 }

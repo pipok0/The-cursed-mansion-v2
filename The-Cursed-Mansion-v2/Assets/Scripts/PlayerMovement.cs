@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public bool isClimbing;
 
+    public PlayerCombat sonPlayerCombat;
+
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask collisionLayers;
@@ -48,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Flip(rb.velocity.x);
+        sonPlayerCombat.Flip(rb.velocity.x);
 
         float characterVelocity = Mathf.Abs(rb.velocity.x);
         animator.SetFloat("Speed", characterVelocity);
